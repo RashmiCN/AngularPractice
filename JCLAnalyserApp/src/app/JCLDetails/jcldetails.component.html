@@ -1,0 +1,35 @@
+<div class="container" align='left'>
+<div class='panel panel-primary'>
+    <div class="panel-heading">
+        {{JCLName}}        
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <div class="table">
+                <thead>
+                    <tr>
+                        <th>StepName</th>
+                        <th>Program</th>
+                        <th>Input DSN</th>
+                        <th>Output DSN</th>
+                        <th>Control Card</th>
+                        <th>XCOM</th>
+                        <th>eMail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor='let program of program'>
+                    <td>{{program.stepName}}</td>
+                    <td>{{program.programName}}</td>
+                    <td>{{program.inputDSN}}</td>
+                    <td>{{program.outputDSN}}</td>
+                    <td>{{program.controlCard}}</td>
+                    <td>{{program.xcom}}</td>
+                    <td>{{program.email}}</td>
+                  </tr>
+                </tbody>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
